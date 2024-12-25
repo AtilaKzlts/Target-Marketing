@@ -17,6 +17,9 @@ The aim of this project is to analyse the insurance company's customer data to d
 
 The company's customer base caters to the upper-middle income group with an average age of 39 years and a policy duration of 5 years. The average salary is 100K and Health, Car, Home and Life policies have almost equal number of customers (~2500 customers). Men have more policies than women in all policy types. The high income group is the largest segment with 7,039 customers, with the 30s (4,346 customers) constituting the largest customer group, while the 20s are the second largest group with 1,592 customers. Health insurance is the policy type with the highest complaint rate with 547 complaints.
 
+For more detailed demographic information :
+[Demographic Visualisation Report](https://github.com/AtilaKzlts/Insurance_customer_targeting/blob/main/assets/demographic_report.pdf)
+
 
 ## About the Data Set
 
