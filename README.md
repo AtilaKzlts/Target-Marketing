@@ -2,16 +2,13 @@
 
 ### Table of Contents
 
-- [Project Introduction](https://github.com/AtilaKzlts/Target-Marketing-for-Insurance-Company/edit/main/README.md#project-introduction
-)
-    - [Executive summary](
-https://github.com/AtilaKzlts/Target-Marketing-for-Insurance-Company/edit/main/README.md#executive-summary
-)
-    - [About the Data Set](https://github.com/AtilaKzlts/Target-Marketing-for-Insurance-Company/edit/main/README.md#about-the-data-set)
-    - [Objective](https://github.com/AtilaKzlts/Target-Marketing-for-Insurance-Company/edit/main/README.md#objective)
-- [Analysis Outputs](https://github.com/AtilaKzlts/Target-Marketing-for-Insurance-Company/edit/main/README.md#analysis-outputs)
-- [Detailed Summary and Recommendations](
-https://github.com/AtilaKzlts/Target-Marketing-for-Insurance-Company/edit/main/README.md#detailed-summary-and-recommendations)
+- Project Introduction
+    - Executive summary
+    - About the Data Set
+    - Objective
+- Analysis Outputs
+- Detailed Summary and Recommendations
+
 
 ## Project Introduction
 
