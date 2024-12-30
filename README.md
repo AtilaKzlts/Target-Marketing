@@ -63,14 +63,18 @@ SELECT
     COUNT(policy_id) AS TotalPolicies,
     ROUND(AVG(age)::NUMERIC, 2) AS AverageAge,  
     ROUND(AVG(tenure)::NUMERIC, 2) AS AverageTenure,  
-    ROUND(AVG(estimatedsalary)::NUMERIC, 1) AS AverageSalary
+    ROUND(AVG(estimatedsalary)::NUMERIC, 1) AS AverageSalary,
+    SUM(is_active_policy) AS ActivePolicies
 FROM incurance  
 ```
 Outputs:
 
-| Total Policies | Average Age | Average Tenure | Average Salary |
-| :------------: | :---------: | :------------: | :------------: |
-| 10,000         | 38.92       | 5.01           | 100,090.2      |
+																  
+| Total Policies | Average Age | Average Tenure | Average Salary | ActivePolicies |
+| :------------: | :---------: | :------------: | :------------: | :------------: |
+| 10,000         | 38.92       | 5.01           | 100,090.2      | 5,151      |
+
+
 
 ```sql 
 /* Customer information by policy type */ 
