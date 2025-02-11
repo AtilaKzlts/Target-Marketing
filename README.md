@@ -1,4 +1,4 @@
-# | Target Marketing for Insurance Company 🎯
+# Target Marketing for Insurance Company 
 
 ### Table of Contents
 
