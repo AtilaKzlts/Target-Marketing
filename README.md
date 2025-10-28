@@ -1,6 +1,6 @@
 # Target Marketing for Insurance Company 
 
-### Table of Contents
+### ▌ Table of Contents
 
 - Project Introduction
     - Executive summary
@@ -10,11 +10,11 @@
 - Detailed Summary and Recommendations
 
 
-## Project Introduction
+## ▌ Project Introduction
 
 The aim of this project is to analyse the insurance company's customer data to design more accurate targeting and personalised marketing campaigns. Customer segmentation will be performed to better understand the existing customer base and segment-specific strategies will be developed. Particular emphasis will be placed on age groups, estimated salary and tenure.
 
-## Executive summary
+## ▌ Executive summary
 
 The company's customer base caters to the upper-middle income group with an average age of 39 years and a policy duration of 5 years. The average salary is 100K and Health, Car, Home and Life policies have almost equal number of customers (~2500 customers). Men have more policies than women in all policy types. The high income group is the largest segment with 7,039 customers, with the 30s (4,346 customers) constituting the largest customer group, while the 20s are the second largest group with 1,592 customers. Health insurance is the policy type with the highest complaint rate with 547 complaints.
 
@@ -22,7 +22,7 @@ The company's customer base caters to the upper-middle income group with an aver
 **[Demographic Visualisation Report](https://github.com/AtilaKzlts/Insurance_customer_targeting/blob/main/assets/demographic_report.pdf)**
 
 
-## About the Data Set
+## ▌ About the Data Set
 
 The table below contains the column names and descriptions in the dataset on insurance policies.
 
@@ -44,7 +44,7 @@ The table below contains the column names and descriptions in the dataset on ins
 | `customer_feedback_score` | Customer feedback score |
 
 
-## Objective
+## ▌ Objective
 
 The purpose of this study is to develop target marketing strategies by analyzing the demographic, behavioral and financial characteristics of customers in the insurance sector.
 Within the scope of the analysis:
