@@ -21,7 +21,7 @@ The company's customer base caters to the upper-middle income group with an aver
 **For more detailed demographic information :**
 **[Demographic Visualisation Report](https://github.com/AtilaKzlts/Insurance_customer_targeting/blob/main/assets/demographic_report.pdf)**
 
-
+![](https://github.com/AtilaKzlts/Target-Marketing/blob/main/assets/demographic_report.jpg)
 ## ▌ About the Data Set
 
 The table below contains the column names and descriptions in the dataset on insurance policies.
