@@ -1,6 +1,6 @@
-# Target Marketing for Insurance Company 🎯
+# Target Marketing for Insurance Company 
 
-### Table of Contents
+### ▌ Table of Contents
 
 - Project Introduction
     - Executive summary
@@ -9,19 +9,20 @@
 - Analysis Outputs
 - Detailed Summary and Recommendations
 
-## Project Introduction
+
+## ▌ Project Introduction
 
 The aim of this project is to analyse the insurance company's customer data to design more accurate targeting and personalised marketing campaigns. Customer segmentation will be performed to better understand the existing customer base and segment-specific strategies will be developed. Particular emphasis will be placed on age groups, estimated salary and tenure.
 
-## Executive summary
+## ▌ Executive summary
 
 The company's customer base caters to the upper-middle income group with an average age of 39 years and a policy duration of 5 years. The average salary is 100K and Health, Car, Home and Life policies have almost equal number of customers (~2500 customers). Men have more policies than women in all policy types. The high income group is the largest segment with 7,039 customers, with the 30s (4,346 customers) constituting the largest customer group, while the 20s are the second largest group with 1,592 customers. Health insurance is the policy type with the highest complaint rate with 547 complaints.
 
-For more detailed demographic information :
-[Demographic Visualisation Report](https://github.com/AtilaKzlts/Insurance_customer_targeting/blob/main/assets/demographic_report.pdf)
+**For more detailed demographic information :**
+**[Demographic Visualisation Report](https://github.com/AtilaKzlts/Insurance_customer_targeting/blob/main/assets/demographic_report.pdf)**
 
 
-## About the Data Set
+## ▌ About the Data Set
 
 The table below contains the column names and descriptions in the dataset on insurance policies.
 
@@ -43,7 +44,7 @@ The table below contains the column names and descriptions in the dataset on ins
 | `customer_feedback_score` | Customer feedback score |
 
 
-## Objective
+## ▌ Objective
 
 The purpose of this study is to develop target marketing strategies by analyzing the demographic, behavioral and financial characteristics of customers in the insurance sector.
 Within the scope of the analysis:
@@ -62,14 +63,18 @@ SELECT
     COUNT(policy_id) AS TotalPolicies,
     ROUND(AVG(age)::NUMERIC, 2) AS AverageAge,  
     ROUND(AVG(tenure)::NUMERIC, 2) AS AverageTenure,  
-    ROUND(AVG(estimatedsalary)::NUMERIC, 1) AS AverageSalary
+    ROUND(AVG(estimatedsalary)::NUMERIC, 1) AS AverageSalary,
+    SUM(is_active_policy) AS ActivePolicies
 FROM incurance  
 ```
 Outputs:
 
-| Total Policies | Average Age | Average Tenure | Average Salary |
-| :------------: | :---------: | :------------: | :------------: |
-| 10,000         | 38.92       | 5.01           | 100,090.2      |
+																  
+| Total Policies | Average Age | Average Tenure | Average Salary | ActivePolicies |
+| :------------: | :---------: | :------------: | :------------: | :------------: |
+| 10,000         | 38.92       | 5.01           | 100,090.2      | 5,151      |
+
+
 
 ```sql 
 /* Customer information by policy type */ 
@@ -192,134 +197,5 @@ Outputs;
 
 --- 
 
-## Detailed Summary and Recommendations
 
-### *General Customer Profile and Analysis*
-
-### 1. Total Number of Policies: **10,000**
-- A large customer base provides opportunities for marketing campaigns.
-- Segmentation can enable tailored campaigns.
-
-### 2. Average Age: **38.92**
-- An average age of 39 indicates an active group interested in health and car insurance.
-- Campaigns can focus on family packages and long-term health policies.
-
-### 3. Average Policy Tenure: **5.01 years**
-- Indicates positive customer loyalty.
-- Loyalty programs and renewal discounts can help extend tenure.
-
-### 4. Average Salary: **100,090.2**
-- Targets an upper-middle-income group.
-- Premium insurance packages and additional services can appeal to this group.
-
-#### **Summary and Recommendations**
-- The customer base is broad and income profiles are suitable for targeted marketing.  
-- Strengthen tenure with loyalty programs and boost revenue with premium services and personalized campaigns.  
-- Focus on customer retention while exploring cross-selling opportunities with new products.
-
----
-
-### *Policy Types and Distribution*
-
-### 1. Policy Types:
-- Health, car, home, and life insurance have nearly equal customer distribution.
-- This indicates a balanced insurance portfolio.
-
-### 2. Average Age:
-- The average age across policy types is similar (38.75 - 39.01).
-- **Health** and **Life** insurance are ideal for customers focused on family health and security.
-
-### 3. Average Policy Tenure:
-- **Life** insurance has the lowest tenure compared to others.
-- Renewal bonuses or additional benefits can improve retention in Life insurance.
-
-### 4. Average Salary:
-- Customers with **Health** insurance have lower salaries, while **Home** insurance customers have higher incomes.
-- Offer affordable packages for Health insurance and premium options for Home insurance.
-
-### 5. Active Policies:
-- Policy renewal rates are low.
-- Renewal campaigns, discounts, and early reminders can increase renewal rates.
-
-#### **Summary**
-- The distribution of policies is balanced, but the low active policy rate indicates a need for better customer retention and renewal strategies.  
-- Use age, salary, and tenure data to create customized campaigns and cross-sell effectively.
-
----
-
-### *Gender-Based Customer Profile*
-
-### 1. Total Number of Policies:
-- Males own more policies across all types compared to females.
-- Marketing strategies can focus on exclusive campaigns targeting male customers.
-
-### 2. Average Age:
-- Female customers are slightly older than male customers.
-- Offers can be tailored to different age groups.
-
-### 3. Average Salary:
-- Female customers have higher salaries in **Car** insurance compared to males.
-- Premium services can be offered to female customers.
-
-### 4. Tenure:
-- Female customers have shorter tenure in **Life** insurance compared to males.
-- Special renewal campaigns can be designed for female customers.
-
-#### **Summary**
-- Gender segmentation can increase customer loyalty and policy sales through targeted campaigns.  
-- Exclusive offers for males and premium services for females provide opportunities for growth.
-
----
-
-### *Income-Based Customer Analysis*
-
-### 1. High-Income Group:
-- The largest customer group (**7,039 customers**).
-- Cross-selling and premium products can be introduced.
-
-### 2. Middle-Income Group:
-- A smaller customer group overall.
-- Affordable, comprehensive packages can be appealing, especially for **Car** and **Health** insurance.
-
-### 3. Low-Income Group:
-- Limited policy ownership with lower coverage amounts.
-- Basic packages and short-term insurance products can be offered.
-
-#### **Summary**
-- Tailored campaigns based on income levels can boost policy sales.  
-- Premium products can target high-income customers, while affordable solutions can attract low-income customers.
-
----
-
-### *Age-Based Customer Profile*
-
-### 1. Customers in Their 20s and 30s:
-- The most active customer group for insurance.
-- Cross-selling opportunities can increase customer value.
-
-### 2. Customers in Their 40s:
-- Have the highest salary levels.
-- Premium packages, family plans, and investment-focused insurance products can be offered.
-
-### 3. Younger and Older Customers:
-- Education insurance can be offered to younger customers, while health insurance is ideal for older customers.
-
-#### **Summary**
-- Age segmentation reveals strategic marketing opportunities.  
-- Focus on customers in their 20s and 30s for growth while offering premium products to high-income 40s customers.
-
----
-
-### *Customer Satisfaction and Complaints by Policy Type*
-
-### 1. Health Insurance:
-- Has the highest complaint rate.
-- Service quality in Health policies may need improvement.
-
-### 2. Life Insurance:
-- Satisfaction score is slightly above average.
-- Strategies to further improve customer satisfaction in Life insurance can be developed.
-
-#### **Summary**
-- Health insurance shows significant issues with customer satisfaction.  
-- Improvements in service quality should be prioritized.
+### [**Return to Portfolio**](https://github.com/AtilaKzlts/Atilla-Portfolio)
